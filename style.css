@@ -34,3 +34,77 @@ body
     text-decoration: none;
     color: rgb(4, 77, 52);
 }
+.contact
+{
+    display: flex;
+}
+.contact-left
+{
+    margin-left: 60px;
+    flex-basis: 35%;
+}
+.contact p {
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+.socials
+{
+ 
+    justify-content: space-between;
+}
+
+.socials a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 30px;
+    transition: transform 0.5s;
+}
+
+.contact-right
+{
+    
+}
+.socials a:hover
+{
+ color: green;
+ transform: translateY(-5px);
+}
+.contact-right form
+{
+  width: 80%;
+  font-size: 20px;
+}
+form input, form textarea
+{
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    outline: none;  /*outline sets most of the outline properties in a single declaration.*/
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-color: forestgreen;
+    font-size: 15px;
+    border-style: solid;
+}
+form button
+{
+    background-color: rgb(4, 77, 52);
+    transition-duration: 0.4s;
+    border:0;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 14px 40px;
+    font-size: 16px;
+    color: aliceblue;
+}
+form button:hover
+{
+    background-color: rgb(214, 218, 214);
+    
+}
