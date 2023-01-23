@@ -37,7 +37,10 @@ body
 .contact
 {
     display: flex;
-}
+    max-width: 100%; /*prevent images become bigger*/
+    height: auto;
+
+}   
 .contact-left
 {
     margin-left: 60px;
@@ -66,10 +69,7 @@ body
     transition: transform 0.5s;
 }
 
-.contact-right
-{
-    
-}
+
 .socials a:hover
 {
  color: green;
