@@ -1,5 +1,6 @@
 body
  {
+ 
 }
 
 .navigation
@@ -39,6 +40,8 @@ body
     display: flex;
     max-width: 100%; /*prevent images become bigger*/
     height: auto;
+    margin: auto;
+  
 
 }   
 .contact-left
