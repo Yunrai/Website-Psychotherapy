@@ -2,9 +2,21 @@ body {
   background-image: url(wp4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+ 
+
+}
+.main-grid{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 .navigation{
-    background-color: white;;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: block;
 }
 
 .bar {
@@ -13,7 +25,7 @@ body {
     top: 0;
     left: 0; 
     width: 100%;
-    line-height: 5px;
+    line-height: 3px;
     color: #FFF
 }
 .container{
@@ -96,12 +108,20 @@ body {
 .menu :hover{
     color:white;
 }
+
+.bottom
+{
+ 
+
+}
 .contact
 {
-    display: flex;
-    max-width: 100%; /*prevent images become bigger*/
     height: auto;
     margin: auto;
+    padding-left: 5%;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   
 
 }   
@@ -175,7 +195,7 @@ body {
 }
 .calendar{
 
- justify-content: right;
+    justify-content: right;
     text-align: right;
     margin-right: 80px;
 }
