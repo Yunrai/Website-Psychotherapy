@@ -36,7 +36,7 @@ body {
 {
     display: inline-block;
     text-decoration: none;
-    color: rgb(253, 253, 253);
+    color: rgb(187, 187, 187);
     font-size: 20px;
     margin-right: 10px;
     margin-top: 20px;
@@ -70,7 +70,7 @@ body {
 .footer-text{
     text-align: center;
     padding: 10px 30px 30px 30px;
-    color: rgb(255, 253, 253);
+    color: rgb(184, 184, 184);
 }
 .container{
     align-items: center;
@@ -94,8 +94,6 @@ body {
 .home-text {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
- 
       
 }
 
