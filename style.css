@@ -1,10 +1,5 @@
 body {
-  background-image: url(wp4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-
+ 
  
 
 }
@@ -19,6 +14,43 @@ body {
     background-position: block;
 }
 
+.footer {
+    position: static;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    bottom:0;
+    background-color: rgb(59, 59, 59);
+
+}
+.socials2
+{
+ 
+    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+
+.socials2 a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    transition: transform 0.5s;
+    justify-content: center;
+}
+
+.socials2 a:hover
+{
+    color: green;
+    transform: translateY(-5px);
+    
+}
+
 .bar {
     position: flex;
     background-color: rgb(4, 77, 52);
@@ -26,7 +58,19 @@ body {
     left: 0; 
     width: 100%;
     line-height: 3px;
-    color: #FFF
+    color: #FFF;
+}
+.bar2{
+    position: flex;
+    width: 100%;
+    line-height: 3px;
+    color: #FFF;
+    border-bottom: 2px solid rgb(4, 77, 52);
+}
+.footer-text{
+    text-align: center;
+    padding: 10px 30px 30px 30px;
+    color: rgb(255, 253, 253);
 }
 .container{
     align-items: center;
@@ -59,7 +103,7 @@ body {
     margin-top: -15%;
     color: rgb(4, 77, 52); 
     font-size: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #p1{
    font-style: italic;
@@ -111,7 +155,12 @@ body {
 
 .bottom
 {
- 
+    background-image: url(wp4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  
 
 }
 .contact
