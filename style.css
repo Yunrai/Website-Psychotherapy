@@ -346,6 +346,15 @@ body {
     width: 100%;
  }
 
+#carusel img:nth-child(n) {
+    display: none;
+ }
+
+ #carusel img:nth-child(1) {
+    display: block;
+ }
+
+
  .image-gallery .slide{
     position: absolute;
     top: 50%;
@@ -355,9 +364,6 @@ body {
     height: 45px;
     width: 45px; 
 }
-
-   
-    
 
  .image-gallery .right{
     right:0;
