@@ -327,32 +327,31 @@ body {
 }
 .image-gallery{
     padding: 100px 130px;
-    width:1000px;
-    height:700px;
     overflow: hidden;
     position: relative; 
-
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+  }
     
-}
+
 
 .image-gallery .images{
     height: 100%;
     width: 100%;
     overflow: hidden; 
-       
+    border-radius: 30px;
+   
+  
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
  .images img{
     height: 100%;
     width: 100%;
  }
 
-#carusel img:nth-child(n) {
-    display: none;
- }
-
- #carusel img:nth-child(1) {
-    display: block;
- }
 
 
  .image-gallery .slide{
