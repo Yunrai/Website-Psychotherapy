@@ -352,7 +352,36 @@ body {
     width: 100%;
  }
 
+.mid
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+.mid img{
+    flex: 33.33%;
+    overflow: hidden; 
+    flex-grow: 1;
+    width: 33.33333%;
+    display: inline-block;
+  
+    
+   
+}
 
+.mid img:hover
+{
+    
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s ease;
+    overflow: hidden;
+   
+
+}
 
  .image-gallery .slide{
     position: absolute;
