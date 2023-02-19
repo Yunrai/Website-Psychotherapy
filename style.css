@@ -133,6 +133,7 @@ body {
     margin: 0 15px;
     text-transform: uppercase;
     
+    
 }
 .menu ul li a{
     text-decoration: none;
@@ -145,6 +146,7 @@ body {
     padding: 8px 13px;
     border-radius: 10px;
     text-decoration: white;
+   
         
 }
 .menu :hover{
@@ -344,7 +346,6 @@ body {
     overflow: hidden; 
     border-radius: 30px;
    
-  
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
  .images img{
@@ -382,24 +383,77 @@ body {
    
 
 }
-
-.servicesGallery{
+.services{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: auto;
+    overflow:hidden;
+   text-align: center;
 }
-.servicesGallery img{
+.servicesGallery{
     cursor: pointer;
     overflow: hidden;
     flex-grow: 1;
     flex: 33,33%;
     width: 33.33333%;
     box-sizing: content-box;
+    justify-content: center;
+    text-align: center;
 }
- .services1{
-    
- }
 
+.servicesGallery img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    transition-duration: .3s;
+    justify-content: center;
+    text-align: center;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+}
+.servicesGallery h1{
+    box-sizing: content-box;
+    cursor:pointer;
+    justify-content: center;
+    transform: translate(-10%, -90%);
+    font-size: 1.6em;
+    color: white;
+    transition-duration: .3s;
+    text-align: center;
+    display: block;
+    text-shadow: 1px 1px 1px grey;
+}
+.servicesGallery p{
+  cursor:pointer;
+  max-width: 80%;
+  text-align:center;
+  left: 50%;
+  text-shadow: 1px 5px 10px rgb(241, 241, 241);
+ 
+  display:none;
+  margin-right: -50%;
+  transition-duration: .3s;
+  transform: translate(-50%, -50%);
+}
+.servicesGallery img:hover{
+    transform: scale(1.1);
+    transition-duration: .3s;
+    opacity: .8;
+
+}
+.servicesGallery h1:hover{
+    color:white;
+    display: block;
+    transition-duration: .3s;
+}
+.servicesGallery p:hover{
+    color:white;
+    display: block;
+    transition-duration: .3s;
+
+}
  .image-gallery .slide{
     position: absolute;
     top: 50%;
@@ -413,7 +467,7 @@ body {
  .image-gallery .right{
     right:0;
     padding-right: 160px;
-   
+
 
  }
  .slide span{
