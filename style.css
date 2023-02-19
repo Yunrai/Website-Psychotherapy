@@ -383,6 +383,23 @@ body {
 
 }
 
+.servicesGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.servicesGallery img{
+    cursor: pointer;
+    overflow: hidden;
+    flex-grow: 1;
+    flex: 33,33%;
+    width: 33.33333%;
+    box-sizing: content-box;
+}
+ .services1{
+    
+ }
+
  .image-gallery .slide{
     position: absolute;
     top: 50%;
