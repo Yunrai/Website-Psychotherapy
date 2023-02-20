@@ -1,3 +1,4 @@
+"use strict";
 
 let rightArrow = document.querySelector("#slideRight");
 

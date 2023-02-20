@@ -390,6 +390,7 @@ body {
     height: auto;
     overflow:hidden;
    text-align: center;
+    
 }
 .servicesGallery{
     cursor: pointer;
@@ -417,25 +418,31 @@ body {
     box-sizing: content-box;
     cursor:pointer;
     justify-content: center;
-    transform: translate(-10%, -90%);
+    transform: translate(-50%, 50%);
+    transform: translateY(-9em);
     font-size: 1.6em;
     color: white;
     transition-duration: .3s;
     text-align: center;
-    display: block;
+   
     text-shadow: 1px 1px 1px grey;
+    background-color: rgba(109, 108, 108, 0.212); 
+    
+    
 }
-.servicesGallery p{
+.servicesGallery span{
   cursor:pointer;
   max-width: 80%;
   text-align:center;
-  left: 50%;
-  text-shadow: 1px 5px 10px rgb(241, 241, 241);
  
-  display:none;
-  margin-right: -50%;
+  color: white;
+  position: absolute;
+ 
   transition-duration: .3s;
-  transform: translate(-50%, -50%);
+  transform: translate(-5%, -1%);
+  transform: translateY(-13em);
+  
+ 
 }
 .servicesGallery img:hover{
     transform: scale(1.1);
@@ -443,17 +450,12 @@ body {
     opacity: .8;
 
 }
-.servicesGallery h1:hover{
+.servicesGallery span:hover{
     color:white;
     display: block;
     transition-duration: .3s;
 }
-.servicesGallery p:hover{
-    color:white;
-    display: block;
-    transition-duration: .3s;
 
-}
  .image-gallery .slide{
     position: absolute;
     top: 50%;
