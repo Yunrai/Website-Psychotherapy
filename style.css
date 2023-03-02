@@ -387,9 +387,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: auto;
+    height: fit-content;
     overflow:hidden;
-   text-align: center;
+    text-align: center;
+    width: fit-content;
+   
     
 }
 .servicesGallery{
@@ -401,61 +403,71 @@ body {
     box-sizing: content-box;
     justify-content: center;
     text-align: center;
+    height: fit-content;
+    display:block;
+    position:relative;
+   
 }
 
 .servicesGallery img{
     max-width: 100%;
     width: 100%;
     height: 100%;
+    max-height: 400px;
     transition-duration: .3s;
     justify-content: center;
     text-align: center;
     display:block;
     overflow:hidden;
     cursor:pointer;
-}
-.servicesGallery h1{
     box-sizing: content-box;
-    cursor:pointer;
-    justify-content: center;
-    transform: translate(-50%, 50%);
-    transform: translateY(-9em);
-    font-size: 1.6em;
-    color: white;
-    transition-duration: .3s;
-    text-align: center;
-   
-    text-shadow: 1px 1px 1px grey;
-    background-color: rgba(109, 108, 108, 0.212); 
-    
+    float:left;
     
 }
-.servicesGallery span{
-  cursor:pointer;
-  max-width: 80%;
-  text-align:center;
+.servicesGallery .title{
+     position:absolute;
+     display:block;
+     cursor:pointer;
+     top: 40%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+     font-size: 2em;
+     text-shadow: 1px 5px 10px black;
+     transition-duration: .3s;
+     color: white;
+     background-color: rgba(149, 149, 150, 0.116);
+}
+.servicesGallery .text{
+    position:absolute;
+    top: 55%;
+    cursor:pointer;
+    max-width: 80%;
+    text-align:center;
+    left: 50%;
+    text-shadow: 1px 5px 10px black;
+    font-size: 20px;
+    display:none;
+    margin-right: -50%;
+    transition-duration: .3s;
+    transform: translate(-50%, -50%) 
+}
  
-  color: white;
-  position: absolute;
- 
-  transition-duration: .3s;
-  transform: translate(-5%, -1%);
-  transform: translateY(-13em);
+
+
+.servicesGallery:hover img{
+    transform: scale(1.2);
+    transition-duration: .3s;
   
  
 }
-.servicesGallery img:hover{
-    transform: scale(1.1);
-    transition-duration: .3s;
-    opacity: .8;
+.servicesGallery:hover span{
+  color:white;
+  display: block;
+  transition-duration: .3s;
+
 
 }
-.servicesGallery span:hover{
-    color:white;
-    display: block;
-    transition-duration: .3s;
-}
-
  .image-gallery .slide{
     position: absolute;
     top: 50%;
@@ -500,4 +512,14 @@ body {
       .menu input[type=text] {
         border: 1px solid #ccc;  
       }
+    }
+    @media only screen and (max-width: 900px) {
+        .servicesGallery {
+            width: calc(50% - 6px);
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        .servicesGallery {
+            width: 100%;
+        }
     }
