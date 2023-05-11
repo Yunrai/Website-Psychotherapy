@@ -51,7 +51,11 @@ function reset() {
   });
 
   startSlide();
-/*  
+
+
+
+ /*
+
 leftArrow.addEventListener("click", () => {
     const img = document.querySelector("#carusel");
     let idx = findDisplayNone(img.children);

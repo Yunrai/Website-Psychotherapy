@@ -353,7 +353,7 @@ body {
     width: 100%;
  }
 
-.mid
+.mid 
 {
     display: flex;
     flex-direction: row;
@@ -380,6 +380,8 @@ body {
     transform: scale(1.1);
     transition: 0.4s ease;
     overflow: hidden;
+    border-radius:1em;
+   
    
 
 }
@@ -497,6 +499,12 @@ body {
 .search button img{
     height: 25px;
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 @media screen and (max-width: 600px) {
     .menu .search {
         float:none;
