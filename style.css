@@ -84,13 +84,20 @@ body {
     padding: 100px 0;
     margin-left: 20%;
     justify-content: center;
+  
     
 }
 .container-left img{
     border-radius: 50%;
     width: 80%;
+    margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+   
 }
-
 .home-text {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -122,11 +129,16 @@ body {
     align-content: center;
     padding: 30px 0;
 }
+
+
+
 .logo
 {
     width: 230px;
     cursor: pointer;
 }
+
+
 .menu ul li {
     list-style: none;
     display: inline-block;
@@ -135,24 +147,45 @@ body {
     
     
 }
+
 .menu ul li a{
     text-decoration: none;
     color: rgb(4, 77, 52);
     font-size: 17px;
+    position: relative;
+    padding: 0 10px;
 }
 
-.menu ul li a:hover {
+/*.menu ul li a:hover {
     background-color: rgb(4, 77, 52); 
-    padding: 8px 13px;
+    padding:2px 5px 2px 6px;
     border-radius: 10px;
     text-decoration: white;
+    font-weight:normal;
+    height:17px;
+}*/
+.menu ul li a:after{  /*creates a pseudo-element that is the last child of the selected element. */
+    content:"";
+    position:absolute;
+    background-color: yellowgreen;
+    height: 3px;
+    width: 0;
+    left:0;
+    bottom: -10px;
+    transition: 0.2s;
    
-        
-}
-.menu :hover{
-    color:white;
+ 
+    
 }
 
+.menu ul li a:hover:after{
+    width:100%;
+    
+}
+/*.menu :hover{
+    color:white;
+}
+*/
 .bottom
 {
     background-image: url(wp4.jpg);
@@ -281,7 +314,18 @@ body {
     border-color: forestgreen;
     font-size: 15px;
     border-style: solid;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-left: 0;
+    padding: 10px;
+    
+   
 }
+.search form input:hover{
+    color:black;
+   
+}
+
 
 
 .searchbar form button{
@@ -293,20 +337,23 @@ body {
      cursor: pointer;
      border-radius: 10px;
      font-size: 16px;
-     color: aliceblue;
+     
+
       
 }
 .searchbar button{
-    padding: 7px 12px;
+    padding: 6px 12px;
     background-color: rgb(4, 77, 52);
     border-radius: 10px;
     border-style: none;
     font-size: 15px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
     
 }
 .search form button:hover
 {
-    background-color: rgb(215, 224, 215);
+    background-color:yellowgreen;
     border:0;
     
 }
@@ -368,7 +415,7 @@ body {
     flex-grow: 1;
     width: 33.33333%;
     display: inline-block;
-  
+   
     
    
 }
@@ -395,6 +442,71 @@ body {
     width: fit-content;
    
     
+}
+.servicesMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+}
+
+.servicesIndex{
+    cursor: pointer;
+    overflow: hidden;
+    flex-grow: 1;
+    flex: 33,33%;
+    width: 33.33333%;
+    box-sizing: content-box;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    display:block;
+    position:relative;
+}
+
+.servicesIndex .title{
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+    color: white;
+    background-color: rgba(149, 149, 150, 0.116);
+}
+.servicesIndex .text{
+   position:absolute;
+   top: 55%;
+   cursor:pointer;
+   max-width: 80%;
+   text-align:center;
+   left: 50%;
+   text-shadow: 1px 5px 10px black;
+   font-size: 20px;
+   display:none;
+   margin-right: -50%;
+   transition-duration: .3s;
+   transform: translate(-50%, -50%) 
+}
+
+
+.servicesIndex img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    transition-duration: .3s;
+    justify-content: center;
+    text-align: center;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+    box-sizing: content-box;
+    float:left;
 }
 .servicesGallery{
     cursor: pointer;
@@ -504,7 +616,8 @@ body {
     content: "";
     display: table;
     clear: both;
-  }
+}
+
 @media screen and (max-width: 600px) {
     .menu .search {
         float:none;
