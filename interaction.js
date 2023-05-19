@@ -110,3 +110,37 @@ function showImage(){
     // img[indexValue-1].style.display ="block";
 
 */
+
+let calendar = document.querySelector('.calendar');
+const month_names = [
+  'Ianuarie',
+  'Februarie',
+  'Martie',
+  'Aprilie',
+  'Mai',
+  'Iunie',
+  'Iulie',
+  'August',
+  'Septembrie',
+  'Octombrie',
+  'Noviembrie',
+  'Decembrie',
+];
+let month_pick = document.querySelector('#month-pick');
+const format = document.querySelector('.format');
+const timeFormat = document.querySelector('.time-format');
+const dateFormat =  document.querySelector('.date-format');
+
+month_pick.onClick = () =>{
+  months.classList.remove('hideonce');
+  months.classList.remove('hide');
+  months.classList.add('show');
+  format.classList.remove('showtime');
+  format.classList.add('hidetime');
+  timeFormat.classList.remove('showtime');
+  timeFormat.classList.add('hideTime');
+  dateFormat.classList.remove('showtime');
+  dateFormat.classList.add('hideTime');
+};
+
+
