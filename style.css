@@ -634,21 +634,11 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
- 
+    
 }
 
   
 
-.bot-calendar{
-    
-    box-sizing: border-box;
-    background:linear-gradient(to right, #a8f096, #fbc7d4);
-   
-   
-   
-    
-    
-}
 .calendar-body{
     
     place-items: center;
@@ -658,20 +648,25 @@
     
 }
 .calendar-container{
-    width: max-content;
+    
+    box-sizing: border-box;
+    background:linear-gradient(to right, #a8f096, #fbc7d4);
+    border-radius: 20px;
+    width:790px;
+    height: 100%;
     height: max-content;
     position: relative;
     display: flex;
-    padding: 2% 2px 0px 0px;
+    padding: 3% 0px 3% 0px;
     justify-content: center;
     top: 10%;
     right: 0%;
-    width: 100%;
-    height: 100%;
+    margin: auto;
+    box-shadow: var(--shadow);
   }
 
 .calendar{
-    height: 610px;
+    height: 700px;
     width: max-content;
     background-color: white;
     border-radius: 25px;
@@ -683,13 +678,28 @@
 .calendar-header{
      background-color: #a8f096;
      display:flex;
+     flex:50%;
      justify-content: space-between;
      align-items: center;
-     font-weight: 600;
+     font-weight: 700;
      color: white;
      padding:10px;
+     border-radius: 10px;
 
 }
+
+.calendar-header div:hover{
+        color: white;
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+}
+
+.change-date{
+    display: flex;
+    font-weight: 900;
+   
+}
+
 
 .calendar-body{
     pad: 10px;
@@ -698,10 +708,12 @@
 .calendar-weeks-days{
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    font-weight: 500px;
+    font-weight: 600px;
     cursor: pointer;
     color: rgb(87, 86, 86);
-    
+    padding-top: 20px;
+    font-size: large;
+   
 
 }
 
@@ -715,31 +727,36 @@
     display: grid;
     place-items: center;
     color:#a8f096;
-    height:50px;
-
+    
+    
 }
 
 .calendar-days{
-        display:grid;
-        grid-template-columns: repeat(7,1fr);
-        gap: 2px;
-        color: var(--color-txt);
-
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    font-weight: 000px;
+    cursor: pointer;
+    color: rgb(87, 86, 86);
+    grid-auto-rows: minmax(70px, auto);
+    font-size: larger;
 }
 
 .calendar-days div{
     width: 37px;
     height: 33px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5px;
     position: relative;
     cursor:pointer;
     animation: to-top 1s forwards;
-
+    display: grid;
+    place-items: center;
+    color:#a8f096;
+    margin: 0 30%;
+    font-size: l;
 }
-
+ 
 .month-pick{
     padding: 5px 10px;
     border-radius: 10px;
@@ -776,14 +793,10 @@
 
 .year-change:hover pre {
     color:white;
+    font-weight: 700;
   }
 
-.calendar-footer{
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items:center; /*items are packed toward to end line*/
-}
+
 #year:hover{
     cursor:pointer;
     transform: scale(1.07);
@@ -792,13 +805,14 @@
 
 .calendar-days div span{
     position: absolute;
+    
 
 }
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+
+#year{
+    padding-top:7px;
 }
+
 
 .calendar-days div:hover{
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
@@ -853,23 +867,29 @@
     pointer-events: none;
   }
 
-.time {
+
+.calendar-footer{
+    padding: 10px;
+    display: flex;
+    align-items:center; /*items are packed toward to end line*/
     width: max-content;
     height: max-content;
     font-family: Dubai Light, Century Gothic;
     position: relative;
     display: inline;
-    top: 140px;
+    top: 100px;
     justify-content: center;
-  }
+    left:30px;
+}
 
 .format {
     font-family: Microsoft JhengHei UI;
     font-size: 1.4rem;
-    padding-right: 5%;
+    padding-right: 15px;
     border-right: 3px solid #a8f096;
     position: absolute;
     left: -1rem;
+   
 }
 .time-format {
     font-size: 1.5rem;
@@ -882,11 +902,15 @@
     height: max-content;
     width: max-content;
     position: relative;
-    left: 40%;
+    left: 71%;
     top: -18px;
-    text-align: center;
+    text-align: right;
   }
-
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
   .date-format.hideTime {
     animation: hidetime 1.5s forwards;

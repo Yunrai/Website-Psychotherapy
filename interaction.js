@@ -109,7 +109,18 @@ function showImage(){
     // }
     // img[indexValue-1].style.display ="block";
 
-*/
+
+
+const isLeapYear = (year) => {
+  return (
+    (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) ||
+    (year % 100 === 0 && year % 400 === 0)
+  );
+};
+const getFebDays = (year) => {
+  return isLeapYear(year) ? 29 : 28;
+};
+
 
 let calendar = document.querySelector('.calendar');
 const month_names = [
@@ -123,15 +134,16 @@ const month_names = [
   'August',
   'Septembrie',
   'Octombrie',
-  'Noviembrie',
+  'Noiembrie',
   'Decembrie',
 ];
+
 let month_pick = document.querySelector('#month-pick');
 const format = document.querySelector('.format');
 const timeFormat = document.querySelector('.time-format');
 const dateFormat =  document.querySelector('.date-format');
 
-month_pick.onClick = () =>{
+month_pick.onclick = () =>{
   months.classList.remove('hideonce');
   months.classList.remove('hide');
   months.classList.add('show');
@@ -144,3 +156,116 @@ month_pick.onClick = () =>{
 };
 
 
+const generateCalendar = (month, year) => {
+  let calendar_days = document.querySelector('.calendar-days');
+  calendar_days.innerHTML = '';
+  let calendar_header_year = document.querySelector('#year');
+  let days_of_month = [
+    31,
+    getFebDays(year),
+    31,
+    30,
+    31,
+    30,
+    31,
+    31,
+    30,
+    31,
+    30,
+    31,
+  ];
+
+  let currentDate = new Date();
+    
+  month_pick.innerHTML = month_names[month];
+  
+  calendar_header_year.innerHTML = year;
+  
+  let first_day = new Date(year, month);
+
+  for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
+  
+    let day = document.createElement('div');
+
+    if (i >= first_day.getDay()) {
+      day.innerHTML = i - first_day.getDay() + 1;
+
+      if (i - first_day.getDay() + 1 === currentDate.getDate() &&
+        year === currentDate.getFullYear() &&
+        month === currentDate.getMonth()
+      ) {
+        day.classList.add('current-date');
+      }
+    }
+    calendar_days.appendChild(day);
+  }
+};
+
+let months = calendar.querySelector('.months');
+month_names.forEach((e, index) => {
+    let month = document.createElement('div');
+    month.innerHTML=`<div>${e}</div>`;
+    months.append(month);
+    month.onclick = () => {
+      currentMonth.value = index;
+      generateCalendar(currentMonth.value, currentYear.value);
+      months.classList.replace('show', 'hide');
+      format.classList.remove('hideTime');
+      format.classList.add('showtime');
+      timeFormat.classList.remove('hideTime');
+      timeFormat.classList.add('showtime');
+      dateFormat.classList.remove('hideTime');
+      dateFormat.classList.add('showtime');
+    };
+});
+
+(function () {
+  months.classList.add('hideonce');
+})();
+document.querySelector('#year-previous').onclick = () => {
+  --currentYear.value;
+  generateCalendar(currentMonth.value, currentYear.value);
+};
+document.querySelector('#year-next').onclick = () => {
+  ++currentYear.value;
+  generateCalendar(currentMonth.value, currentYear.value);
+};
+
+let currentDate = new Date();
+  let currentMonth = { value: currentDate.getMonth() };
+  let currentYear = { value: currentDate.getFullYear() };
+  generateCalendar(currentMonth.value, currentYear.value);
+
+  const todayShowTime = document.querySelector('.time-format');
+  const todayShowDate = document.querySelector('.date-format');
+
+  const currshowDate = new Date();
+  const showCurrentDateOption = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    weekday: 'long',
+  };
+  const currentDateFormate = new Intl.DateTimeFormat(
+    'en-US',
+    showCurrentDateOption
+  ).format(currshowDate);
+  todayShowDate.textContent = currentDateFormate;
+  setInterval(() => {
+    const timer = new Date();
+    const option = {
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+    };
+    const formateTimer = new Intl.DateTimeFormat('en-us', option).format(timer);
+    let time = `${`${timer.getHours()}`.padStart(
+      2,
+      '0'
+    )}:${`${timer.getMinutes()}`.padStart(
+      2,
+      '0'
+    )}: ${`${timer.getSeconds()}`.padStart(2, '0')}`;
+    todayShowTime.textContent = formateTimer;
+  }, 1000);
+  */
