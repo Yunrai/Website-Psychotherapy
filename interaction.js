@@ -1,5 +1,37 @@
 "use strict";
 
+
+window.addEventListener("load", function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}, false);
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+window.addEventListener("load", function currentDate(){
+  const astazi = new Date();
+  let day = astazi.getDate();
+  let month = astazi.getMonth();
+  let year = astazi.getFullYear();
+  month = checkMonth(month);
+  document.getElementById('data').innerHTML = day + "-" + month + "-" + year;
+}, false);
+
+function checkMonth(j){
+  if (j<10) { j= "0" + j;
+  return j;
+  }
+}
+
 let rightArrow = document.querySelector("#slideRight");
 
 let leftArrow = document.querySelector("#slideLeft");
@@ -269,3 +301,5 @@ let currentDate = new Date();
     todayShowTime.textContent = formateTimer;
   }, 1000);
   */
+
+ 

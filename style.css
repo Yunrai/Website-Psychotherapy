@@ -703,16 +703,22 @@
 
 .calendar-body{
     pad: 10px;
+    
 }
 
 .calendar-weeks-days{
+
+   
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    font-weight: 600px;
+    font-weight: 600;
     cursor: pointer;
     color: rgb(87, 86, 86);
     padding-top: 20px;
-    font-size: large;
+   
+    
+    font-size:large;
+
    
 
 }
@@ -754,7 +760,7 @@
     place-items: center;
     color:#a8f096;
     margin: 0 30%;
-    font-size: l;
+    font-size: 1;
 }
  
 .month-pick{
@@ -891,12 +897,16 @@
     left: -1rem;
    
 }
-.time-format {
+.clock {
     font-size: 1.5rem;
+    padding-bottom: 5px;
+   
+   
 }
-.time-format.hideTime {
-    animation: hidetime 1.5s forwards;
+.date-format{
+    font-size: 1rem;
 }
+
 .time-value {
     display: block;
     height: max-content;
@@ -905,25 +915,17 @@
     left: 71%;
     top: -18px;
     text-align: right;
-  }
-  .clearfix:after {
+
+  
+}
+
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
 
-  .date-format.hideTime {
-    animation: hidetime 1.5s forwards;
-  }
-  .format.showtime{
-    animation: showtime 1s forwards;
-  }
-  .time-format.showtime {
-    animation: showtime 1s forwards;
-  }
-  .date-format.showtime {
-    animation: showtime 1s forwards;
-  }
+
   @keyframes to-top {
     0% {
       transform: translateY(0);
@@ -954,26 +956,8 @@
       opacity: 1;
     }
   }
-  @keyframes showtime {
-    0% {
-      transform: translatex(250%);
-      opacity: 1;
-    }
-    100% {
-      transform: translatex(0%);
-      opacity: 1;
-    }
-  }
-  @keyframes hidetime {
-    0% {
-      transform: translatex(0%);
-      opacity: 1;
-    }
-    100% {
-      transform: translatex(-370%);
-      opacity: 1;
-    }
-  }
+
+
   @media (max-width:375px) {
     .months>div{
   
