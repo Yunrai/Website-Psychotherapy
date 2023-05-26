@@ -32,6 +32,46 @@ function checkMonth(j){
   }
 }
 
+window.addEventListener("load", () => {
+ 
+   let currYear = currentYear();
+   this.document.getElementById('year').innerHTML = currYear;
+   
+},false);
+
+
+/*const previousYear = document.getElementById('year-previous');
+let currentYear = new Date();
+let year = currentYear.getFullYear();
+*/
+
+function currentYear() {
+  let currentYear = new Date();
+  let year = currentYear.getFullYear();
+
+  return year;
+}
+
+
+const todayYear = currentYear();
+
+const previousYear = document.getElementById('year-previous');
+
+previousYear.addEventListener("click", () => {
+      let year = todayYear;
+      let previousYear = year-1; 
+      while(previousYear < year) {
+        
+        year--;
+      
+      }
+        document.getElementById('year').innerHTML= previousYear;
+      
+    
+      
+});
+
+
 let rightArrow = document.querySelector("#slideRight");
 
 let leftArrow = document.querySelector("#slideLeft");
@@ -83,6 +123,9 @@ function reset() {
   });
 
   startSlide();
+
+
+
 
 
 
