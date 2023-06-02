@@ -20,9 +20,10 @@ function checkTime(i) {
 window.addEventListener("load", function currentDate(){
   const astazi = new Date();
   let day = astazi.getDate();
-  let month = astazi.getMonth();
+  let month = astazi.getMonth() + 1;
   let year = astazi.getFullYear();
   month = checkMonth(month);
+  day = checkMonth(day);
   document.getElementById('data').innerHTML = day + "-" + month + "-" + year;
 }, false);
 
@@ -31,6 +32,7 @@ function checkMonth(j){
   return j;
   }
 }
+
 
 window.addEventListener("load", () => {
  
