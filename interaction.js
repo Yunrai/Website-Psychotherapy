@@ -57,19 +57,32 @@ const todayYear = currentYear();
 
 const previousYear = document.getElementById('year-previous');
 
+let preYear =  todayYear-1;
+      
+let savedYear = 0; 
+
 previousYear.addEventListener("click", () => {
-      let year = todayYear;
-      let previousYear = year-1; 
-      while(previousYear < year) {
-        
-        year--;
-      
-      }
-        document.getElementById('year').innerHTML= previousYear;
-      
     
+    
+       preYear = preYear -1;
+        
+        
+       document.getElementById('year').innerHTML= preYear;
+      
+    savedYear = preYear;
       
 });
+
+const nextYear = document.getElementById('year-next');
+
+nextYear.addEventListener("click", () => {
+    
+     savedYear ++;
+
+     document.getElementById('year').innerHTML= savedYear;
+
+}) ;
+
 
 
 let rightArrow = document.querySelector("#slideRight");
