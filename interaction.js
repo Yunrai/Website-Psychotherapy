@@ -1,5 +1,6 @@
 "use strict";
 
+ //booking calendar
 
 window.addEventListener("load", function startTime() {
   const today = new Date();
@@ -42,11 +43,6 @@ window.addEventListener("load", () => {
 },false);
 
 
-/*const previousYear = document.getElementById('year-previous');
-let currentYear = new Date();
-let year = currentYear.getFullYear();
-*/
-
 function currentYear() {
   let currentYear = new Date();
   let year = currentYear.getFullYear();
@@ -59,33 +55,43 @@ const todayYear = currentYear();
 
 const previousYear = document.getElementById('year-previous');
 
-let preYear =  todayYear-1;
+let preYear =  todayYear;
       
 let savedYear = 0; 
 
+let yearIndex = 0;
+
 previousYear.addEventListener("click", () => {
     
-    
+      
        preYear = preYear -1;
         
         
        document.getElementById('year').innerHTML= preYear;
-      
+    
+    
+    yearIndex++;
     savedYear = preYear;
+   
+    
       
 });
+
+
 
 const nextYear = document.getElementById('year-next');
 
 nextYear.addEventListener("click", () => {
-    
-     savedYear ++;
+    if(yearIndex <= 1)
+            {savedYear++; }
+    else {savedYear = savedYear + yearIndex;}
+       
 
      document.getElementById('year').innerHTML= savedYear;
 
 }) ;
 
-
+// image gallery
 
 let rightArrow = document.querySelector("#slideRight");
 
@@ -105,14 +111,14 @@ function reset() {
     reset();
     img.children[0].style.display = "block";
   }
-    
+
   // Show previous
   function slideLeft() {
     reset();
     img.children[currentIndex - 1].style.display = "block";
     currentIndex--;
   }
-    
+
   // Show next
   function slideRight() {
     reset();
@@ -139,9 +145,7 @@ function reset() {
 
   startSlide();
 
-
-
-
+  
 
 
  /*

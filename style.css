@@ -405,12 +405,21 @@
     width: 100%;
     overflow: hidden; 
     border-radius: 30px;
-   
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
- .images img{
-    height: 100%;
+.images img{
+    height: auto;
     width: 100%;
+   
+    
+ }
+
+ #carusel img:nth-child(n) {
+    display: none;
+ }
+
+ #carusel img:nth-child(1) {
+    display: block;
  }
 
 .mid 
@@ -432,6 +441,8 @@
     
    
 }
+
+
 
 .mid img:hover
 {
