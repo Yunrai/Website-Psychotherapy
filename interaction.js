@@ -145,7 +145,14 @@ function reset() {
 
   startSlide();
 
-  
+// Contact Submit
+const form = document.getElementById('contactform');
+form.addEventListener('submit', e => {
+  if(!form.checkValidity()){
+    e.preventDefault();
+  }
+  form.classList.add('was-validated');
+});
 
 
  /*

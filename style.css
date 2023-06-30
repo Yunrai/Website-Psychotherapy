@@ -73,13 +73,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* two-column layout, and each column takes up 1 fraction*/
     grid-gap: 10px;
-    margin-top: -4%;
+    background-size: cover;
+    bottom:0;
+    
+   
 }
 .container-left{
     margin-top: 5%;
     padding: 100px 0;
     margin-left: 20%;
     justify-content: center;
+    
   
     
 }
@@ -183,12 +187,14 @@
 */
 .bottom
 {
-    background-image: url(wp4.jpg);
+    background-image: url(/img/w88.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-  
+    background-position: right;
+    background-attachment: fixed; 
+
+    
+       
 
 }
 
