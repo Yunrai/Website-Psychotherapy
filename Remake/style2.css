@@ -1,0 +1,223 @@
+.main-grid{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.navigation{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: block;
+}
+.menu{
+    width: 85%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 0;
+}
+.logo {
+    width: 210px;
+    cursor: pointer;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    text-transform: uppercase;   
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(4, 77, 52);
+    font-size: 17px;
+    position: relative;
+    padding: 0 10px;
+}
+.menu ul li a:after{  /*creates a pseudo-element that is the last child of the selected element. */
+    content:"";
+    position:absolute;
+    background-color:forestgreen;
+    height: 3px;
+    width: 0;
+    left:0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+.menu ul li a:hover:after{
+    width:100%; 
+}
+.search{
+    width:100%;
+    padding: 5%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    
+    
+}
+.searchbar{
+    width: 100%;
+    height: 17px;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    float:right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search form input{
+    width:100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    border-color: forestgreen;
+    border-radius: 10px;
+    border-style:solid;
+    background-color: rgb(247, 247, 247);
+    border-left:0;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%; 
+    padding: 10px; 
+    outline:none;
+    height:15px;
+}
+.search form button{
+    cursor:pointer;
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px 12px;
+    background-color: rgb(4, 77, 52);
+    font-size: 15px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%; 
+       
+
+}
+.search form button img{
+    width: 26px;
+}
+.search form button:hover{
+    background-color:forestgreen;
+    border:0;
+    transition: 1s ease-in-out;
+  
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    line-height: 80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+   
+}
+#check{
+    display:none;
+}
+
+@media only screen and (min-width: 641px) and (max-width:768px) {
+   
+}
+@media only screen and (max-width: 641px) {
+    .checkbtn{
+        display:block;
+    }
+    .menu{
+        display:inline-block;
+    }    
+     
+    
+    .menu ul {
+        display: block;
+        background-color: green;
+        float:left;
+        padding: 5%;
+        
+    }
+
+    .menu ul li{
+        
+        display:block;
+        padding: 20px;
+        text-align: center;
+        float:left;
+
+       
+    
+  
+       
+    }
+    .menu ul li a {
+        
+        color:white;
+        padding: 20px 20px;
+        text-align: center;
+        border-top:1px #ccc solid;
+        border-bottom: white;
+       
+        
+    }
+    .search{
+        display:none;
+    }
+    .menu ul li a:hover:after{
+        width:0; 
+
+    }
+    .menu ul li a:hover{
+        background-color: rgb(4, 77, 52);
+        border-radius: 5%;
+    }
+    .menu ul li:first-child a {
+        border-top: none;
+    }
+}
+
+/*
+.search form input{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    outline: none;  /*outline sets most of the outline properties in a single declaration.
+    margin: 15px 0;
+    border-radius: 10px;
+    border-color: forestgreen;
+    border-style: solid;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-left: 0;
+    padding: 10px; 
+}
+.search form input:hover{
+    color:black;
+}
+
+.searchbar form button{
+    cursor:pointer;
+    height:40px;
+    padding: 5px 12px;
+    background-color: rgb(4, 77, 52);
+    transition-duration: 0.4s;
+    border:0;
+    border-radius: 10px;
+    font-size: 16px;          
+}
+.searchbar button{
+    padding: 6px 12px;
+    background-color: rgb(4, 77, 52);
+    border-radius: 10px;
+    border-style: none;
+    font-size: 15px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;    
+}
+.search form button:hover{
+    background-color:forestgreen;
+    border:0;
+} */
+ 
