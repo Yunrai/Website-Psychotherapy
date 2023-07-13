@@ -1,0 +1,38 @@
+.footer {
+    position: static;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(59, 59, 59);
+}
+.socials2
+{
+     justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+
+.socials2 a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(209, 207, 207);
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 30px;
+    transition: transform 0.5s;
+    justify-content: center;
+}
+
+.socials2 a:hover
+{
+    color: green;
+    transform: translateY(-5px);
+    
+}
+.footer-text{
+    text-align: center;
+    padding: 10px 30px 30px 30px;
+    color: rgb(209, 207, 207);
+}

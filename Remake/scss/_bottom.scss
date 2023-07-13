@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Raleway:wght@100;200&display=swap');
+
+.bottom
+{
+    background-image: url(/img/wp99.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right;
+    
+    height:78vh;
+    border-bottom: solid  rgb(10, 119, 37) 2px;
+    
+   
+}
+
+
+.container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* two-column layout, and each column takes up 1 fraction*/
+    grid-gap: 10px;
+    bottom:0;   
+}
+.container-left{
+    margin-top: 5%;
+    padding: 100px 0;
+    margin-left: 20%;
+    justify-content: center;
+    display: inline-grid;
+   
+    
+}
+.pf{
+    border-radius: 50%;
+    width: 80%;
+    background: #fff;
+	overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.home-text {
+    text-align: center;
+    display: inline-grid;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.home-text h1{
+    color: rgb(4, 77, 52); 
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    
+
+}
+.quote{
+     display: inline-block;
+     margin: 1em;
+     overflow: hidden;
+     blockquote{
+        background-color: #fff;
+        border: solid 1px green;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 0;
+        padding: 3em;
+        position: relative;
+        
+          
+      &:before{
+        animation: clockwise 30s infinite linear;
+         background-color: #fff;
+         bottom: 10%;
+         content: "";
+         left: 0;
+         opacity: 0.5;
+         position: absolute;
+         right: 0;
+         top: 10%;
+     }
+     &:after{
+         animation: counter 30s infinite linear;
+         background-color: #fff;
+         bottom: 10%;
+         content: "";
+         left: 0;
+         opacity: 0.5;
+         position: absolute;
+         right: 0;
+         top: 10%;
+     }
+     > * {
+        position: relative;
+        z-index: 1;
+      }
+    }
+}
+#p1{
+   font-style: italic;
+   font-size:20px;
+   display:block;
+   
+   }  
+#p2{
+    text-align: right;
+    font-size:20px;
+    display:block;
+}
+@keyframes clockwise {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes counter {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }

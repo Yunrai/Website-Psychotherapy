@@ -2,15 +2,31 @@
     .checkbtn{
         display:block;
     }
-  
+    .bottom {
+      display:flex;
+     
+    
+    }
+   
+    .home-text h1{
+        text-align: center;
+        
+        
+    }
+    .navigation{
+        border:0;
+    }
+    .quote{
+        width:fit-content;
+       
+    }
     .menu{
         display:inline-block;
         background-color: green;
         width:100% ;
         margin:0;
-        padding:0;
-      
-    
+        padding:0;    
+        
     }    
     .logo{
         display:none;
@@ -26,17 +42,18 @@
     .menu ul li{
         width: 100%;
         padding: 20px;
-        text-align: left;
-        float:left;
+        text-align: right;
+        float:right;
+        
       
-       
     }
     .menu ul li a {
         color:white;
         padding: 20px 20px;
         text-align: center;
-        border-top:1px #ccc solid;
-        border-bottom: white;
+        border-top:1px #5a695b solid;
+       
+ 
     }
     .search{
         display:none;
@@ -45,10 +62,12 @@
         width:0; 
 
     }
-    .menu ul li:hover{
+    .menu ul li a:hover{
         background-color: rgb(4, 77, 52);
         border-radius: 5%;
-        width:fit-content;
+        width:max-content;
+      
+       
         
     }
     .menu ul li:first-child a {
