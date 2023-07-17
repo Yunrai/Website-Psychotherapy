@@ -4,8 +4,17 @@
     }
     .bottom {
       display:flex;
-     
-    
+     }
+   
+  
+    .container{
+        display:flex;
+        
+        
+    }
+    .footer{
+        display:block;
+        height:auto;
     }
    
     .home-text h1{
@@ -76,4 +85,53 @@
     #check:checked ~ ul{
         left:0;
     }
+    .contact{
+           margin:auto;
+           padding:5%;
+        .contact-left{
+            overflow: hidden;
+            position:relative;
+            border: white solid 1px;
+            background-color: rgba(255, 255, 255, 0.5); 
+            border-radius:15px;
+            margin-left: 0;  
+            padding:10px;      
+            
+            h1{
+                 font-size: 17px;
+                 
+            }
+            .ask{
+                font-size:15px;             
+            }
+            p{
+                font-size:15px;    
+                
+            }
+            .mail{
+                overflow-wrap: break-word;
+                
+                
+            }
+            .socials{
+                a {
+                    font-size: 20px;
+                }
+            }
+            
+        }
+        .contact-right{
+            overflow: hidden;
+            border: white solid 1px;
+            padding:10px;        
+            border-radius:15px;
+            background-color: rgba(255, 255, 255, 0.5); 
+            form
+            {
+            width: 80%;
+            font-size: 15px;
+            }
+        }
+    }
 }
+
