@@ -67,6 +67,44 @@ function checkDay(k)
 
 
 }   
+
+//Month Pick
+
+let date = new Date();
+let currYear = date.getFullYear();
+let currMonth = date.getMonth();
+let currentMonth = document.querySelector('.month-pick');
+console.log(currMonth);
+
+const months = ["Ianuarie","Februarie","Martie","Aprilie","Mai","Iunie","Iulie","August","Septembrie","Octombrie","Noiembrie","Decembrie"];
+
+const days = document.querySelector(".calendar-days");
+
+window.addEventListener("load", () =>{
+     this.document.getElementById('month-pick').innerHTML = months[currMonth];
+}, false);
+
+ //Getting last day of month
+
+ window.addEventListener("load", () => {
+     let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
+     console.log(lastDateofMonth);
+     let daysList = "";
+     for(let i=1; i<=lastDateofMonth; i++ ){
+           daysList += `<div>${i}</div>`;
+          }
+          days.innerHTML = daysList;               
+},false);
+
+ let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
+console.log(lastDateofMonth);
+let daysList = "";
+for(let i=1; i<=lastDateofMonth; i++ ){
+     daysList += `<div>${i}</div>`;
+}
+days.innerHTML = daysList;            
+
+//Show Current Year
 window.addEventListener("load", () => {
     
       let currYear = currentYear();
@@ -112,4 +150,4 @@ nextYear.addEventListener("click", () => {
    
         document.getElementById('year').innerHTML= savedYear;
    
-}) ;
+}) 

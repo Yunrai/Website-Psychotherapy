@@ -14,11 +14,10 @@
   padding: 2% 2% 2% 2%;
   justify-content: center;
   right: 0%;
-
 }
 .calendar{
   height: auto;
-  width: max-content;
+  width:60%;
   background-color: white;
   border-radius: 25px;
   overflow: hidden;
@@ -36,6 +35,7 @@
    color: white;
    padding:10px;
    border-radius: 10px;
+   
 }
 .calendar-header div:hover{
       color: white;
@@ -47,13 +47,12 @@
   font-weight: 900;
 }
 .calendar-weeks-days{
-  display: grid;
-  grid-template-columns: repeat(7,1fr);
-  font-weight: 500;
+  display:flex;
   cursor: pointer;
   color: rgb(87, 86, 86);
   padding-top: 20px;
-  font-size:large;
+  font-size: large;
+  justify-content: space-evenly;
 }
 .calendar-weeks-days div:hover{
   color: black;
@@ -69,11 +68,14 @@
 }
 .calendar-days{
   display:grid;
-  grid-template-columns: repeat(7,1fr);
+  grid-template-columns: repeat(7,55px);
   cursor: pointer;
   color: rgb(87, 86, 86);
-  grid-auto-rows: minmax(50px, auto);
+  grid-auto-rows: minmax(50px, 50px);
   font-size: large;
+}
+.calendar-days div:nth-child(7n) {
+  border-right: none;
 }
 .calendar-days div{
   width: 37px;
@@ -86,15 +88,17 @@
   animation: to-top 1s forwards;
   display: grid;
   place-items: center;
-  color:forestgreen;
+  color:black;
   margin: 0 30%;
   font-size: 1;
-  border-bottom: solid 1px green;
+  border-bottom: solid 1px forestgreen;
+  border-right: solid 1px forestgreen;
 }
 .month-pick{
   padding: 5px 10px;
   border-radius: 10px;
   cursor:pointer;
+  font-size: 18px;
 }
 .month-pick:hover{
   background-color: var();
