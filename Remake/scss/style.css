@@ -586,7 +586,7 @@
 }
 
 .calendar {
-  height: auto;
+  height: 550px;
   width: 60%;
   background-color: white;
   border-radius: 25px;
@@ -603,7 +603,7 @@
   align-items: center;
   font-weight: 700;
   color: white;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
 }
 
@@ -672,8 +672,22 @@
   border-right: solid 1px forestgreen;
 }
 
+.calendar-days div.inactive {
+  color: #aaa;
+}
+
+.calendar-days div.active {
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.calendar-days div.active::before {
+  background: #97d620;
+}
+
 .month-pick {
-  padding: 5px 10px;
+  padding: 5px 5px 5px 15px;
   border-radius: 10px;
   cursor: pointer;
   font-size: 18px;
@@ -693,24 +707,48 @@
 }
 
 .year-change {
-  height: 30px;
-  width: 30px;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  margin: 0px 10px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+  font-size: larger;
+  text-align: center;
+  font-size: 1.2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 50%;
 }
 
-.year-change:hover {
+#year-previous {
+  margin-right: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+}
+
+#year-next {
+  border-radius: 50%;
+  place-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+#year-previous:hover {
   background-color: #2da110;
   transition: all 0.2s ease-in-out;
   transform: scale(1.12);
 }
 
-.year-change:hover pre {
-  color: white;
-  font-weight: 700;
+#year-next:hover {
+  background-color: #2da110;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.12);
 }
 
 #year:hover {
@@ -721,10 +759,6 @@
 
 .calendar-days div span {
   position: absolute;
-}
-
-#year {
-  padding: 10px;
 }
 
 .calendar-days div:hover {
@@ -764,23 +798,6 @@
   color: var(--dark-text);
   transform: scale(0.9);
   transition: all 0.2s ease-in-out;
-}
-
-.months.show {
-  visibility: visible;
-  pointer-events: visible;
-  transition: 0.6s ease-in-out;
-  animation: to-left 0.71s forwards;
-}
-
-.months.hideonce {
-  visibility: hidden;
-}
-
-.months.hide {
-  animation: to-right 1s forwards;
-  visibility: none;
-  pointer-events: none;
 }
 
 .calendar-footer {
