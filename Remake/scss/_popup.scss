@@ -1,0 +1,35 @@
+
+.popup{
+    width:300px;
+    background: #fff;
+    border-radius:15px;
+    padding:40px 30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.clickMe{
+    background-color: rgb(4, 77, 52);
+    transition-duration: 0.4s;
+    border:0;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 14px 40px;
+    font-size: 16px;
+    color: aliceblue; 
+}
+.timeBtn{
+    background-color: rgb(4, 77, 52);
+    transition-duration: 0.4s;
+    border:0;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 14px 40px;
+    font-size: 16px;
+    color: aliceblue;
+}
+.timeBtn:hover{
+        background-color: forestgreen;
+}

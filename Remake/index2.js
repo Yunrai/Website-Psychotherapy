@@ -139,6 +139,25 @@ changeMonth.forEach(pre => {
           renderCalendar();
      })
  })
+
+
+
+ //Time Select Pop up
+let dayPick = document.querySelector(".calendar-days");
+dayPick.addEventListener("click", () => {
+     alert("You clicked me!");
+});
+
+let clickMe = document.getElementById("#clickMe");
+clickMe.addEventListener("click", () => {
+     alert("You clicked me!");
+});
+
+let timeBt = document.querySelector(".timeBtn");
+timeBt.addEventListener("click", () => {
+     alert("You clicked me!");
+});
+
 /*
  window.addEventListener("load", () => {
      let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();

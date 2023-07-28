@@ -7,22 +7,24 @@
 .calendar-container{
   box-sizing: border-box;
   border-radius: 20px;
-  width:750px;
+  width:730px;
   position: relative;
   display: flex;
   float: left;
   padding: 2% 2% 2% 2%;
   justify-content: center;
   right: 0%;
+  overflow: hidden;
+
 }
 .calendar{
-  height: 550px;
+  height: 540px;
   width:60%;
   background-color: white;
   border-radius: 25px;
-  overflow: hidden;
-  padding: 50px 50px 50px 50px;
+   padding: 50px 50px 50px 50px;
   box-shadow: var(--shadow);
+  overflow: hidden;
   
 }
 .calendar-header{

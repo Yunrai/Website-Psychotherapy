@@ -576,23 +576,24 @@
 .calendar-container {
   box-sizing: border-box;
   border-radius: 20px;
-  width: 750px;
+  width: 730px;
   position: relative;
   display: flex;
   float: left;
   padding: 2% 2% 2% 2%;
   justify-content: center;
   right: 0%;
+  overflow: hidden;
 }
 
 .calendar {
-  height: 550px;
+  height: 540px;
   width: 60%;
   background-color: white;
   border-radius: 25px;
-  overflow: hidden;
   padding: 50px 50px 50px 50px;
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .calendar-header {
@@ -853,6 +854,44 @@
   --white: #fff;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --font-family: consolas;
+}
+
+.popup {
+  width: 300px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.clickMe {
+  background-color: rgb(4, 77, 52);
+  transition-duration: 0.4s;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 14px 40px;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.timeBtn {
+  background-color: rgb(4, 77, 52);
+  transition-duration: 0.4s;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 14px 40px;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.timeBtn:hover {
+  background-color: forestgreen;
 }
 
 body {
