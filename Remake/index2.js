@@ -86,6 +86,10 @@ const nextMonth = document.querySelector("#year-next");
 
 
 const renderCalendar = () =>{
+     let calendar = document.querySelector(".calendar");
+     if (!calendar)
+          return;
+
      startTime();
      currentDate();
      currentMonth.innerHTML = months[currMonth];
@@ -121,7 +125,10 @@ const renderCalendar = () =>{
      //Show Current Year  
           
       this.document.getElementById('year').innerHTML = currYear;
-     
+      let dayPick = document.querySelector(".calendar-days");
+      dayPick.addEventListener("click", () => {
+           alert("You clicked me!");
+      });
 };
 renderCalendar();
 
@@ -141,17 +148,41 @@ changeMonth.forEach(pre => {
  })
 
 
-
  //Time Select Pop up
-let dayPick = document.querySelector(".calendar-days");
-dayPick.addEventListener("click", () => {
-     alert("You clicked me!");
-});
+let clickMe = document.querySelector("#clickMe");
+let timeBtn = document.querySelector("#timeBtn");
+let popUp = document.querySelector("#popup");
+function showPopUp(e){
+ 
+    clickMe.style.display = "none";
+    popUp.style.display = "block";
+    e.preventDefault();
+}
+function done(e){
+    
+     alert("It is DONE!");
+     e.preventDefault();
+}
 
-let clickMe = document.getElementById("#clickMe");
+
+//make active class for time Selection
+let timeLi = document.querySelectorAll(".hourlist li");
+
+for(let i = 0;  i <timeLi.length; i++){
+     timeLi[i].addEventListener("click", () => {
+          let selectedTime = document.getElementsByClassName("active");
+          if (selectedTime.length > 0){
+          selectedTime[0].className = selectedTime[0].className.replace("active", "inactive");
+          }
+          this.className += "active";
+     }); 
+}
+/*
+
+let clickMe = document.querySelector("#clickMe");
 clickMe.addEventListener("click", () => {
      alert("You clicked me!");
-});
+ });
 
 let timeBt = document.querySelector(".timeBtn");
 timeBt.addEventListener("click", () => {

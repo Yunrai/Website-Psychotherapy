@@ -1,14 +1,39 @@
 
 .popup{
-    width:300px;
+ 
+    width:400px;
     background: #fff;
     border-radius:15px;
-    padding:40px 30px;
+    padding:30px 30px;
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.hourlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    li{
+        list-style: none;
+        border-radius: 10px;
+        background: rgb(238, 237, 237);
+        width: 150px;
+        padding: 30px;
+        cursor:pointer;
+        margin:3px;
+        font-size:20px;
+      }
+     li:hover{
+        background-color: rgb(4, 77, 52);
+        transition-duration: 0.4s;
+        color: aliceblue; 
+    }
+    .active{ 
+        background-color: rgb(4, 77, 52);
+        transition-duration: 0.4s;
+        color: aliceblue; } 
 }
 .clickMe{
     background-color: rgb(4, 77, 52);
