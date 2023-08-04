@@ -126,8 +126,10 @@ const renderCalendar = () =>{
           
       this.document.getElementById('year').innerHTML = currYear;
       let dayPick = document.querySelector(".calendar-days");
-      dayPick.addEventListener("click", () => {
-           alert("You clicked me!");
+      dayPick.addEventListener("click", (e) => {
+          clickMe.style.display = "none";
+          popUp.style.display = "block";
+          e.preventDefault();
       });
 };
 renderCalendar();
@@ -168,16 +170,22 @@ function done(e){
 //make active class for time Selection
 let timeLi = document.querySelectorAll(".hourlist li");
 
-for(let i = 0;  i <timeLi.length; i++){
+for(let i = 0;  i < timeLi.length; i++){
      timeLi[i].addEventListener("click", () => {
-          let selectedTime = document.getElementsByClassName("active");
-          if (selectedTime.length > 0){
-          selectedTime[0].className = selectedTime[0].className.replace("active", "inactive");
-          }
-          this.className += "active";
-     }); 
+          document.querySelector(".active")?.classList.remove("active");
+          timeLi[i].classList.add('active');
+
+     });
 }
 /*
+timeLi.forEach(li => {} );
+  let selectedTime = document.getElementsByClassName("active");
+          if (selectedTime.length > 0){
+          selectedTime[0].className = selectedTime[0].className.replace("active", "inactive");
+          
+     }
+     timeLi[i].className = selectedTime[0].className.replace("inactive", "active");
+     }); 
 
 let clickMe = document.querySelector("#clickMe");
 clickMe.addEventListener("click", () => {

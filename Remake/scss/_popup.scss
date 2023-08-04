@@ -1,6 +1,5 @@
 
 .popup{
- 
     width:400px;
     background: #fff;
     border-radius:15px;
@@ -10,6 +9,15 @@
     left:50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    box-shadow: var(--shadow);
+    display: none;
+    transition: 0.5s;
+    opacity:0;
+}
+.popup.active{
+    transition: 0.5s;
+    display:block;
+    opacity:1
 }
 .hourlist{
     display: grid;
@@ -57,4 +65,10 @@
 }
 .timeBtn:hover{
         background-color: forestgreen;
+}
+
+.bottom#blur.active{
+    filter:blur(15px);
+    pointer-events: none;
+    user-select:none;
 }

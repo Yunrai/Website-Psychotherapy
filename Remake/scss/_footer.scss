@@ -1,5 +1,7 @@
 .footer {
-    position: static;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
     display:grid;
     grid-template-rows: 1fr 1fr;
     background-color: rgb(59, 59, 59);

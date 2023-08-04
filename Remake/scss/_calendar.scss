@@ -3,6 +3,7 @@
   font-family: var(--font-family);
   overflow: hidden;
   pad: 10px;
+  position: relative;
 }
 .calendar-container{
   box-sizing: border-box;
@@ -22,7 +23,7 @@
   width:60%;
   background-color: white;
   border-radius: 25px;
-   padding: 50px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
   box-shadow: var(--shadow);
   overflow: hidden;
   
@@ -243,17 +244,4 @@
   text-align: right;
 }
 
-
-:root {
-    --dark-text: #f8fbff;
-    --light-body: #f3f8fe;
-    --light-main: #fdfdfd;
-    --light-second: #c3c2c8;
-    --light-hover: #f0f0f0;
-    --light-text: #151426;
-    --light-btn: #9796f0;
-    --white: #fff;
-    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    --font-family: consolas;
-}
 

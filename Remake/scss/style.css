@@ -357,7 +357,10 @@
   }
 }
 .footer {
-  position: static;
+  position: absolute;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   display: grid;
   grid-template-rows: 1fr 1fr;
   background-color: rgb(59, 59, 59);
@@ -572,6 +575,7 @@
   font-family: var(--font-family);
   overflow: hidden;
   pad: 10px;
+  position: relative;
 }
 
 .calendar-container {
@@ -844,19 +848,6 @@
   text-align: right;
 }
 
-:root {
-  --dark-text: #f8fbff;
-  --light-body: #f3f8fe;
-  --light-main: #fdfdfd;
-  --light-second: #c3c2c8;
-  --light-hover: #f0f0f0;
-  --light-text: #151426;
-  --light-btn: #9796f0;
-  --white: #fff;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  --font-family: consolas;
-}
-
 .popup {
   width: 400px;
   background: #fff;
@@ -867,6 +858,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  box-shadow: var(--shadow);
+  display: none;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.popup.active {
+  transition: 0.5s;
+  display: block;
+  opacity: 1;
 }
 
 .hourlist {
@@ -921,8 +922,29 @@
   background-color: forestgreen;
 }
 
+.bottom#blur.active {
+  filter: blur(15px);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --dark-text: #f8fbff;
+  --light-body: #f3f8fe;
+  --light-main: #fdfdfd;
+  --light-second: #c3c2c8;
+  --light-hover: #f0f0f0;
+  --light-text: #151426;
+  --light-btn: #9796f0;
+  --white: #fff;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --font-family: consolas;
 }/*# sourceMappingURL=style.css.map */
