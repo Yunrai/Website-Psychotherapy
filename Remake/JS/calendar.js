@@ -101,14 +101,19 @@ const renderCalendar = () =>{
     //Show Current Year  
          
      this.document.getElementById('year').innerHTML = currYear;
+
+
      let dayPick = document.querySelector(".calendar-days");
+
      dayPick.addEventListener("click", () => {
+    
       let blur = document.getElementById("blur");
       let popUp = document.querySelector("#popup");
+      
       blur.classList.toggle("active");
       popUp.classList.toggle("active");
      });
-
+     
 
     
 };
@@ -116,6 +121,8 @@ const renderCalendar = () =>{
 let timeLi = document.querySelectorAll(".hourlist li");
 let horu = document.querySelector(".hourlist")
    
+
+
 
 for(let i = 0;  i < timeLi.length; i++){
 timeLi[i].addEventListener("click", () => {
@@ -132,7 +139,8 @@ function toggle2(){
     let blur = document.getElementById("blur");
     blur.classList.remove("active");
     popUp.classList.remove("active");
-   
+    location.reload();
+    
 };
 
 changeMonth.forEach(pre => {
