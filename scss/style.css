@@ -930,6 +930,34 @@
           user-select: none;
 }
 
+.about-container {
+  border: white solid 1px;
+  background-color: rgba(247, 247, 247, 0.788);
+  border-radius: 15px;
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  text-align: center;
+  justify-content: center;
+}
+.about-container p {
+  font-size: 20px;
+  padding: 20px 30px;
+  line-height: 2;
+  text-align: left;
+}
+.about-container img {
+  width: 440px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-left: 20%;
+}
+
+.box2 {
+  padding: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
