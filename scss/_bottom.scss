@@ -6,8 +6,8 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position: right;
+    overflow:hidden;
 }
-
 
 .container{
     align-items: center;
@@ -22,8 +22,7 @@
     margin-left: 20%;
     justify-content: center;
     display: inline-grid;
-   
-    
+     
 }
 .pf{
     border-radius: 50%;
