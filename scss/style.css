@@ -131,16 +131,19 @@
     display: flex;
   }
   .container {
-    display: flex;
+    margin-top: 5%;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1px;
   }
-  .footer {
-    display: block;
-    height: auto;
+  .container .home-text h1 {
+    font-size: 20px;
   }
   .home-text h1 {
     text-align: center;
   }
   .navigation {
+    background-color: green;
     border: 0;
   }
   .quote {
@@ -193,8 +196,8 @@
     left: 0;
   }
   .contact {
-    margin: auto;
-    padding: 5%;
+    padding-left: 5%;
+    padding-top: 3%;
   }
   .contact .contact-left {
     overflow: hidden;
@@ -230,6 +233,24 @@
   .contact .contact-right form {
     width: 80%;
     font-size: 15px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 100%;
+    flex-wrap: wrap;
+  }
+  .about-container img {
+    display: none;
+    margin: 0;
+  }
+  .about-container p {
+    line-height: normal;
+    font-size: 16px;
+    padding: 1px;
+  }
+  .box2 {
+    padding: 1px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
