@@ -1,28 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Raleway:wght@100;200&display=swap');
 
-.bottom
-{
+.bottom {
     background-image: url(/img/wp99.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: right;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.container{
+.container {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* two-column layout, and each column takes up 1 fraction*/
     grid-gap: 10px;
-    bottom:0;   
+    bottom: 0;
 }
-.container-left{
+.container-left {
     margin-top: 5%;
     padding: 100px 0;
     margin-left: 20%;
     justify-content: center;
     display: inline-grid;
-     
 }
 .pf{
     border-radius: 50%;
@@ -43,9 +41,8 @@
     color: rgb(4, 77, 52); 
     font-size: 40px;
     font-family: 'Raleway', sans-serif;
-    
-
 }
+
 .quote{
      display: inline-block;
      margin: 1em;
@@ -88,6 +85,7 @@
       }
     }
 }
+
 #p1{
    font-style: italic;
    font-size:20px;

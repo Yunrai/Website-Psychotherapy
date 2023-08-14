@@ -130,13 +130,12 @@
   .bottom {
     display: flex;
   }
-  .container {
+  .bottom .container {
     margin-top: 5%;
-    grid-template-columns: 1;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: none;
     grid-gap: 1px;
   }
-  .container .home-text h1 {
+  .bottom .container .home-text h1 {
     font-size: 20px;
   }
   .home-text h1 {
@@ -233,12 +232,6 @@
   .contact .contact-right form {
     width: 80%;
     font-size: 15px;
-  }
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 100%;
-    flex-wrap: wrap;
   }
   .about-container img {
     display: none;
