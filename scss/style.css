@@ -127,19 +127,227 @@
   .checkbtn {
     display: block;
   }
+  body .footer .socials {
+    padding: 10px 10px;
+  }
+  body .footer .socials2 a {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  body .popup {
+    width: 300px;
+    padding: 20px 20px;
+  }
+  body .popup .hourlist li {
+    width: 100px;
+    padding: 22px;
+    cursor: pointer;
+    margin: 3px;
+    font-size: 18px;
+  }
   .bottom {
     display: flex;
   }
   .bottom .container {
     margin-top: 5%;
     grid-template-columns: none;
-    grid-gap: 1px;
+    grid-gap: 0;
+    grid-template-rows: 1fr;
+    padding-bottom: 20px;
   }
   .bottom .container .home-text h1 {
     font-size: 20px;
+    padding: 10px;
+    display: table;
+    background-color: rgba(255, 255, 255, 0.7450980392);
+    margin: 0px auto 0px auto; /* keep the table centered */
+    border-radius: 10px;
+    margin-top: 20px;
   }
-  .home-text h1 {
+  .bottom .container .pf {
+    width: 60%;
+  }
+  .bottom .container-left {
+    margin-top: 0;
+    padding: 5px;
+    margin-left: 0;
+    justify-content: center;
+    display: flex;
+  }
+  .bottom #p1 {
+    font-size: 17px;
+  }
+  .bottom #p2 {
+    font-size: 17px;
+  }
+  .bottom .quote {
+    margin: 1em;
+    overflow: hidden;
+  }
+  .bottom .quote blockquote {
+    background-color: #fff;
+    border: solid 1px green;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+  }
+  .bottom .contact {
+    padding: 5px;
+    padding-top: 3%;
+    grid-template-columns: none;
+    border: white solid 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+  }
+  .bottom .contact .contact-left {
+    overflow: hidden;
+    position: relative;
+    border-bottom: white solid 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: radius 0;
+    margin-left: 0;
+    padding: 5px;
+    margin-right: -30%;
+  }
+  .bottom .contact .contact-left h1 {
+    font-size: 17px;
+  }
+  .bottom .contact .contact-left .ask {
+    font-size: 15px;
+  }
+  .bottom .contact .contact-left p {
+    font-size: 15px;
+    padding: 0;
+    text-align: justify;
+  }
+  .bottom .contact .contact-left .mail {
+    overflow-wrap: break-word;
+  }
+  .bottom .contact .contact-left .socials a {
+    font-size: 15px;
+    padding-bottom: 10px;
+    display: none;
+  }
+  .bottom .contact .contact-right {
+    padding: 7px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: -20%;
+  }
+  .bottom .contact .contact-right form {
+    width: 80%;
+    font-size: 15px;
+  }
+  .bottom .contact .contact-right form input, .bottom .contact .contact-right form textarea {
+    padding: 5px 5px;
+  }
+  .bottom .about-container img {
+    display: none;
+    margin: 0;
+  }
+  .bottom .about-container p {
+    font-size: 16px;
+    padding: px;
+  }
+  .bottom .box2 {
+    padding: 1px;
+  }
+  .bottom .calendar {
+    width: 100%;
+    padding: 20px;
+  }
+  .bottom .calendar-weeks-days {
+    font-size: medium;
+    justify-content: space-evenly;
+  }
+  .bottom .calendar-days {
+    grid-template-columns: repeat(7, 47px);
+    grid-auto-rows: minmax(50px, 50px);
+    font-size: medium;
+  }
+  .bottom .calendar-days div {
+    width: 30px;
+    height: 33px;
+    align-items: center;
+    padding: 3px;
+  }
+  .bottom .format {
+    font-size: 1.3rem;
+    padding-right: 10px;
+    left: -1rem;
+  }
+  .bottom .clock {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+  }
+  .bottom .date-format {
+    font-size: 1rem;
+  }
+  .bottom .time-value {
+    left: 60%;
+    top: -33px;
+  }
+  .bottom .services {
+    display: grid;
+    justify-content: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow: hidden;
     text-align: center;
+    width: 100%;
+  }
+  .bottom .servicesGallery {
+    cursor: pointer;
+    overflow: hidden;
+    flex-grow: 1;
+    flex: 50%;
+    box-sizing: content-box;
+    justify-content: center;
+    text-align: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: block;
+    position: relative;
+  }
+  .bottom .servicesGallery img {
+    width: 100%;
+    height: 100%;
+    max-height: 460px;
+    transition-duration: 0.3s;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: content-box;
+  }
+  .bottom .servicesGallery:hover img {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+  }
+  .bottom .servicesGallery:hover span {
+    color: white;
+    display: inline-block;
+    transition-duration: 0.3s;
+    background-color: rgba(149, 149, 150, 0.116);
+  }
+  .bottom .servicestxt {
+    padding: 10px;
+    border-bottom: solid rgba(10, 119, 37, 0.582) 2px;
+  }
+  .bottom .servicestxt .box {
+    border: white solid 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 20px 50px;
+  }
+  .bottom .servicestxt p {
+    font-size: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    line-height: 2em;
   }
   .navigation {
     background-color: green;
@@ -193,57 +401,6 @@
   }
   #check:checked ~ ul {
     left: 0;
-  }
-  .contact {
-    padding-left: 5%;
-    padding-top: 3%;
-  }
-  .contact .contact-left {
-    overflow: hidden;
-    position: relative;
-    border: white solid 1px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    margin-left: 0;
-    padding: 10px;
-  }
-  .contact .contact-left h1 {
-    font-size: 17px;
-  }
-  .contact .contact-left .ask {
-    font-size: 15px;
-  }
-  .contact .contact-left p {
-    font-size: 15px;
-  }
-  .contact .contact-left .mail {
-    overflow-wrap: break-word;
-  }
-  .contact .contact-left .socials a {
-    font-size: 20px;
-  }
-  .contact .contact-right {
-    overflow: hidden;
-    border: white solid 1px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  .contact .contact-right form {
-    width: 80%;
-    font-size: 15px;
-  }
-  .about-container img {
-    display: none;
-    margin: 0;
-  }
-  .about-container p {
-    line-height: normal;
-    font-size: 16px;
-    padding: 1px;
-  }
-  .box2 {
-    padding: 1px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 768px) {
@@ -370,6 +527,7 @@
   }
 }
 .footer {
+  position: absolute;
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
