@@ -6,6 +6,8 @@
     background-size: cover;
     background-position: right;
     overflow: hidden;
+    min-height:70vh;    
+    
 }
 
 .container {
@@ -14,6 +16,7 @@
     grid-template-columns: 1fr 1fr 1fr; /* two-column layout, and each column takes up 1 fraction*/
     grid-gap: 10px;
     bottom: 0;
+    
 }
 .container-left {
     margin-top: 5%;

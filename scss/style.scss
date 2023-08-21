@@ -7,15 +7,20 @@
 @import 'services';
 @import 'calendar';
 @import 'popup';
-@import 'about.scss';
+@import 'about';
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Raleway:wght@100;200&display=swap');
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100%;
+    
 }
-
+html  {
+    height: 100%;
+    margin: 0;
+ }
 
 :root {
     --dark-text: #f8fbff;
