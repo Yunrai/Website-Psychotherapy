@@ -147,7 +147,6 @@
   }
   body .bottom {
     display: flex;
-    min-height: initial;
   }
   body .bottom .container {
     margin-top: 5%;
@@ -387,14 +386,113 @@
     left: 0;
   }
 }
-@media only screen and (min-width: 641px) and (max-width: 768px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
   .menu ul {
     display: block;
   }
-}
-@media only screen and (min-width: 768px) {
-  .menu ul {
-    display: block;
+  .menu {
+    padding: 10px;
+  }
+  .bottom .container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two-column layout, and each column takes up 1 fraction*/
+    grid-gap: 20px;
+    bottom: 0;
+  }
+  .bottom .container .home-text h1 {
+    font-size: 30px;
+    padding: 20px;
+    display: table;
+    background-color: rgba(255, 255, 255, 0.7450980392);
+    margin: 0px auto 0px auto; /* keep the table centered */
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .bottom .container .pf {
+    width: 90%;
+  }
+  .bottom .container-left {
+    margin-left: 30px;
+  }
+  .bottom #p1 {
+    font-size: 20px;
+  }
+  .bottom #p2 {
+    font-size: 20px;
+  }
+  .bottom .quote {
+    margin: 1em;
+    overflow: hidden;
+  }
+  .bottom .quote blockquote {
+    background-color: #fff;
+    border: solid 1px green;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+  }
+  .bottom .calendar-container {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bottom .contact-left {
+    margin-left: 6px;
+  }
+  .bottom .contact-left h1 {
+    font-weight: 600;
+    font-size: 23px;
+  }
+  .bottom .contact-right {
+    padding-top: 30px;
+  }
+  .bottom .contact-right form button {
+    font-size: 20px;
+  }
+  .bottom .socials a {
+    font-size: 25px;
+  }
+  .search {
+    display: none;
+  }
+  .navigation .menu {
+    width: 85%;
+    align-items: right;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-content: right;
+    padding: 10px 0;
+  }
+  .navigation .menu ul li {
+    list-style: none;
+    display: flex;
+    margin: 0 15px;
+    text-transform: uppercase;
+  }
+  .navigation .menu ul li a {
+    text-decoration: none;
+    color: rgb(4, 77, 52);
+    font-size: 17px;
+    position: relative;
+    padding: 5px 10px;
+  }
+  .navigation .menu ul li a:after { /*creates a pseudo-element that is the last child of the selected element. */
+    content: none;
+    position: relative;
+    background-color: forestgreen;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+  }
+  .navigation .menu ul li a:hover:after {
+    width: 100%;
+    background-color: green;
   }
 }
 .bottom {

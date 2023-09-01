@@ -4,6 +4,7 @@
         display:block;
     }
 body{
+    
     .footer{
         .socials{
         padding: 10px 10px;
@@ -31,12 +32,10 @@ body{
 
 .bottom {
       display:flex;
-      min-height:initial;
+
    
 //index container
-
-    .container{
-       
+    .container{  
         margin-top:5%;
         grid-template-columns: none;
         grid-gap: 0;
@@ -83,7 +82,7 @@ body{
            position: relative;
         }}
 
-//navigation
+//contact
 
     .contact{
         padding:5px;
