@@ -1,14 +1,4 @@
-@media only screen and (min-width: 641px) and (max-width:768px) {
-}
-
-
 @media only screen and (min-width: 641px) and (max-width:1024px) {
-    .menu ul{
-        display:block;
-    }
-    .menu{
-        padding:10px;
-    }
     
 .bottom{
    
@@ -53,7 +43,8 @@
            display: inline-block;
            padding: 20px;
            position: relative;
-        }}
+        }
+    }
 
         .calendar-container{
          position: absolute;
@@ -63,30 +54,63 @@
         }
        
         
-//contact 
-.contact-left
+//Contact Page
+    .contact-left
     {
-    margin-left: 6px;
-    h1{
-    font-weight: 600;
-    font-size: 23px;
+        margin-left: 6px;
+        h1{
+          font-weight: 600;
+          font-size: 2vh;
+        }
     }
+    .contact-right{
+        padding-top:30px;
+        form button{
+            font-size:2vh;
+        }
     }
-.contact-right{
-    padding-top:30px;
-    form button{
-        font-size:20px;
-    }
-}
-.socials{
-    a{
-        font-size:25px;
-    }
-}
+    .socials{
+        a{
+         font-size:2vh;
+        }
+    } 
+// End of Contact Page
+
+//About Me Page
+    .box2{
+        .about-container{
+            border: white solid 1px;
+            background-color: rgba(247, 247, 247, 0.788); 
+            border-radius:10px;
+            padding: 2px 2px;
+            grid-template-columns: none;
+            text-align: center;
+            justify-content: center;
+        #about-img{
+            display:none;
+            margin:0;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-text{ 
+            font-size:2vh;
+            padding:0px; 
+            text-align: justify;
+            width: 100%;
+        } 
+        #imgcut{
+            display: block;
+            width: 100%;
+            height: auto;  
+            border-radius:10px;
+        }
+        } //end of about container
+    }  //end of box2
 //
-}
+} //end of bottom
 
 
+//navigation bar
 .search{
     display:none;
 }    
@@ -101,7 +125,9 @@
         align-content: right;
         padding: 10px 0;
     }
-
+    .menu ul{
+        display:block;
+    }
     .menu ul li {
         list-style: none;
         display: flex;
@@ -116,7 +142,7 @@
         position: relative;
         padding: 5px 10px;
     }
-    .menu ul li a:after{  /*creates a pseudo-element that is the last child of the selected element. */
+    .menu ul li a:after{  
         content:none;
         position:relative;
         background-color:forestgreen;
@@ -129,8 +155,23 @@
     .menu ul li a:hover:after{
         width:100%; 
         background-color:green;
-}}
-  
-  //
+    }
 }
-   //
+//end of navigation bar
+
+//Services Page
+.services{
+    border-bottom: solid  rgb(10, 119, 37) 2px;
+    .servicesGallery{
+        .text{
+            position:absolute;
+            top: 70%;
+            color:white;
+            text-shadow: 1px 5px 10px black;
+            font-size: 2vh;
+            display:block;
+        }  
+    }
+}//End of Services
+
+} //End of tablet mode
