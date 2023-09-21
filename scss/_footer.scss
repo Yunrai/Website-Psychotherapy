@@ -1,5 +1,5 @@
 .footer {
-   position: absolute;
+    position: absolute;
     width: 100%;
     height: fit-content;
     display:grid;
@@ -7,16 +7,14 @@
     background-color: rgb(59, 59, 59);
     border-top: solid  rgb(10, 119, 37) 2px;
 }
-.socials2
-{
+.socials2 {
     justify-content: space-between;
     justify-content: center;
     text-align: center;
     padding: 20px 20px;
 }
 
-.socials2 a
-{
+.socials2 a {
     display: inline-block;
     text-decoration: none;
     color: rgb(209, 207, 207);
@@ -27,13 +25,12 @@
     justify-content: center;
 }
 
-.socials2 a:hover
-{
+.socials2 a:hover {
     color: green;
     transform: translateY(-5px);
-    
 }
-.footer-text{
+
+.footer-text {
     text-align: center;
     padding: 10px 30px 30px 30px;
     color: rgb(209, 207, 207);

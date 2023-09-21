@@ -340,15 +340,15 @@
     width: -moz-fit-content;
     width: fit-content;
   }
+  body .logo {
+    display: none;
+  }
   body .menu {
     display: inline-block;
     background-color: green;
     width: 100%;
     margin: 0;
     padding: 0;
-  }
-  body .logo {
-    display: none;
   }
   body .menu ul {
     display: none;
@@ -1100,7 +1100,6 @@
 
 .calendar-footer {
   padding: 10px;
-  display: flex;
   align-items: center; /*items are packed toward to end line*/
   font-family: Dubai Light, Century Gothic;
   position: relative;

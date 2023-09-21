@@ -106,22 +106,18 @@ const renderCalendar = () =>{
      let dayPick = document.querySelector(".calendar-days");
 
      dayPick.addEventListener("click", () => {
-    
-      let blur = document.getElementById("blur");
-      let popUp = document.querySelector("#popup");
-      
-      blur.classList.toggle("active");
-      popUp.classList.toggle("active");
-     });
-     
 
-    
+          let blur = document.getElementById("blur");
+          let popUp = document.querySelector("#popup");
+          
+          blur.classList.toggle("active");
+          popUp.classList.toggle("active");
+     });
+  
 };
 
 let timeLi = document.querySelectorAll(".hourlist li");
 let horu = document.querySelector(".hourlist")
-   
-
 
 
 for(let i = 0;  i < timeLi.length; i++){
@@ -130,6 +126,7 @@ timeLi[i].addEventListener("click", () => {
    timeLi[i].classList.add('active');
 
 });
+
 }
 
 renderCalendar();
@@ -139,8 +136,7 @@ function toggle2(){
     let blur = document.getElementById("blur");
     blur.classList.remove("active");
     popUp.classList.remove("active");
-    location.reload();
-    
+    location.reload();   
 };
 
 changeMonth.forEach(pre => {
@@ -159,5 +155,3 @@ changeMonth.forEach(pre => {
 })
 
 
-
-//make active class for time Selection

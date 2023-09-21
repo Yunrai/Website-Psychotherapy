@@ -1,8 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Raleway:wght@100;200&display=swap');
 
-.contact
-{
+.contact {
     height: auto;
     margin: auto;
     padding-left: 5%;
@@ -10,89 +9,76 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }   
-.contact-left
-{
+
+.contact-left {
     margin-left: 60px;
     flex-basis: 35%;
-
     h1{
-    font-weight: 600;
-    font-size: 30px;
-    font-family: 'Raleway', sans-serif;
-    color:  darkgreen;
-    padding: 1em 0;
-    
-}
-    p {
-    font-size: 20px;
-    margin-top: 30px;
-    padding:5px 0;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 10px;
- }
-  .ask{
-    width:75%;
-      
-  }
+        font-weight: 600;
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        color:  darkgreen;
+        padding: 1em 0;
+    }
+    p{
+        font-size: 20px;
+        margin-top: 30px;
+        padding:5px 0;
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 10px;
+    }
+    .ask{
+        width:75%;  
+    }
 }
 
-.contact-right{
-    
-    form
-            {
-            width: 80%;
-            font-size: 20px;
-            margin-bottom: 2em;
-            font-family: 'Raleway', sans-serif;
-            }
-    form input, form textarea
-            {
-                width: 100%;
-                background-color: rgb(247, 247, 247);
-                outline: none;  /*outline sets most of the outline properties in a single declaration.*/
-                padding: 10px 20px;
-                margin: 15px 0;
-                border-radius: 10px;
-                border-color: forestgreen;
-                font-size: 15px;
-                border-style: solid;
-            }
-    form button
-            {
-                background-color: rgb(4, 77, 52);
-                transition-duration: 0.4s;
-                border:0;
-                cursor: pointer;
-                border-radius: 10px;
-                padding: 14px 40px;
-                font-size: 16px;
-                color: aliceblue;
-                
-            
-            }
-        form button:hover
-        {
-            background-color: forestgreen;
-            
-        }
+.contact-right {
+    form{
+        width: 80%;
+        font-size: 20px;
+        margin-bottom: 2em;
+        font-family: 'Raleway', sans-serif;
+    }
+    form input, form textarea{
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+        outline: none;  /*outline sets most of the outline properties in a single declaration.*/
+        padding: 10px 20px;
+        margin: 15px 0;
+        border-radius: 10px;
+        border-color: forestgreen;
+        font-size: 15px;
+        border-style: solid;
+    }
+    form button{
+        background-color: rgb(4, 77, 52);
+        transition-duration: 0.4s;
+        border:0;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 14px 40px;
+        font-size: 16px;
+        color: aliceblue; 
+    }
+    form button:hover{
+        background-color: forestgreen;
+   
+    }
 }
-.socials
-{
- 
+
+.socials {
     justify-content: space-between;
-    a
-        {
-            display: inline-block;
-            text-decoration: none;
-            color: darkgreen;
-            font-size: 30px;
-            margin-right: 10px;
-            margin-top: 30px;
-            transition: transform 0.5s;
-        }
-        a:hover
-        {
-            color: green;
-            transform: translateY(-5px);
-        }
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: darkgreen;
+        font-size: 30px;
+        margin-right: 10px;
+        margin-top: 30px;
+        transition: transform 0.5s;
+    }
+    a:hover{
+        color: green;
+        transform: translateY(-5px);
+    }
 }

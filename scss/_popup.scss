@@ -1,5 +1,4 @@
-
-.popup{
+.popup {
     width:400px;
     background: #fff;
     border-radius:15px;
@@ -14,12 +13,14 @@
     transition: 0.5s;
     opacity:0;
 }
-.popup.active{
+
+.popup.active {
     transition: 0.5s;
     display:block;
     opacity:1
 }
-.hourlist{
+
+.hourlist {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -32,8 +33,8 @@
         cursor:pointer;
         margin:3px;
         font-size:20px;
-      }
-     li:hover{
+    }
+    li:hover{
         background-color: rgb(4, 77, 52);
         transition-duration: 0.4s;
         color: aliceblue; 
@@ -41,9 +42,11 @@
     .active{ 
         background-color: rgb(4, 77, 52);
         transition-duration: 0.4s;
-        color: aliceblue; } 
+        color: aliceblue; 
+    } 
 }
-.clickMe{
+
+.clickMe {
     background-color: rgb(4, 77, 52);
     transition-duration: 0.4s;
     border:0;
@@ -53,7 +56,8 @@
     font-size: 16px;
     color: aliceblue; 
 }
-.timeBtn{
+
+.timeBtn {
     background-color: rgb(4, 77, 52);
     transition-duration: 0.4s;
     border:0;
@@ -63,11 +67,12 @@
     font-size: 16px;
     color: aliceblue;
 }
-.timeBtn:hover{
-        background-color: forestgreen;
+
+.timeBtn:hover {
+    background-color: forestgreen;
 }
 
-.bottom#blur.active{
+.bottom#blur.active {
     filter:blur(15px);
     pointer-events: none;
     user-select:none;
