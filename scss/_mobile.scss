@@ -2,6 +2,7 @@
 
 .checkbtn {
     display:block;
+    touch-action: auto;
 }
 
 body {
@@ -266,7 +267,8 @@ body {
         background-color: green;
         width:100% ;
         margin:0;
-        padding:0;     
+        padding:0;   
+        touch-action: auto;  
     }    
 
     .menu ul {
@@ -287,6 +289,7 @@ body {
         padding: 20px 20px;
         text-align: center;
         border-top:1px #5a695b solid;
+        touch-action: auto;
     }
 
     .search {

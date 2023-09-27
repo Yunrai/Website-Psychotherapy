@@ -126,6 +126,7 @@
 @media only screen and (max-width: 641px) {
   .checkbtn {
     display: block;
+    touch-action: auto;
   }
   body .footer .socials {
     padding: 10px 10px;
@@ -349,6 +350,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    touch-action: auto;
   }
   body .menu ul {
     display: none;
@@ -366,6 +368,7 @@
     padding: 20px 20px;
     text-align: center;
     border-top: 1px #5a695b solid;
+    touch-action: auto;
   }
   body .search {
     display: none;
