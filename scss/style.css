@@ -534,7 +534,7 @@
   }
 }
 .bottom {
-  background-image: url(/img/wp99.png);
+  background-image: url("/img/wp99.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
