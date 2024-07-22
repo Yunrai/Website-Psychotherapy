@@ -20,7 +20,10 @@
     width: 210px;
     cursor: pointer;
 }
-
+.logoc{
+    width:12vh;
+    max-height:12vh;
+}
 .menu ul li {
     list-style: none;
     display: inline-block;
@@ -33,7 +36,7 @@
     color: rgb(4, 77, 52);
     font-size: 17px;
     position: relative;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .menu ul li a:after {  /*creates a pseudo-element that is the last child of the selected element. */

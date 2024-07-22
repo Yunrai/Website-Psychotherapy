@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Raleway:wght@100;200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Raleway:wght@100;200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Raleway:wght@100;200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Raleway:wght@100;200&display=swap");
 .navigation {
   background-color: white;
   background-repeat: no-repeat;
@@ -25,6 +26,11 @@
   cursor: pointer;
 }
 
+.logoc {
+  width: 12vh;
+  max-height: 12vh;
+}
+
 .menu ul li {
   list-style: none;
   display: inline-block;
@@ -37,7 +43,7 @@
   color: rgb(4, 77, 52);
   font-size: 17px;
   position: relative;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .menu ul li a:after { /*creates a pseudo-element that is the last child of the selected element. */
@@ -534,7 +540,7 @@
   }
 }
 .bottom {
-  background-image: url("/img/wp99.png");
+  background-image: url("/img/wpmain.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -775,6 +781,7 @@
   overflow: hidden;
   text-align: center;
   width: 100%;
+  border-bottom: solid white 2px;
 }
 
 .servicesGallery {
@@ -846,7 +853,7 @@
 
 .servicestxt {
   padding: 30px;
-  border-bottom: solid rgba(10, 119, 37, 0.582) 2px;
+  border-bottom: solid white 2px;
 }
 .servicestxt .box {
   border: white solid 1px;
@@ -1253,6 +1260,24 @@
   border-radius: 30px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   margin-left: 20%;
+}
+
+.arboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2vh;
+}
+
+.arbox {
+  padding: 10vh;
+  font-size: 2vh;
+  border: white solid 1px;
+  border-radius: 3%;
+  margin: 1%;
+  background-color: rgba(247, 247, 247, 0.788);
+}
+.arbox h1 {
+  color: rgb(10, 119, 37);
 }
 
 body {
