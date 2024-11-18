@@ -1296,6 +1296,14 @@
 .arbox h1 {
   color: rgb(10, 119, 37);
 }
+.arbox a {
+  text-decoration: none;
+  color: black;
+}
+.arbox a:visited {
+  text-decoration: none;
+  color: black;
+}
 
 body {
   margin: 0;
