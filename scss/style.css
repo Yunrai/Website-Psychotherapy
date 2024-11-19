@@ -883,6 +883,7 @@
   height: -moz-fit-content;
   height: fit-content;
   line-height: 2em;
+  font-family: "Raleway", sans-serif;
 }
 
 .msv {
@@ -1270,6 +1271,7 @@
   padding: 20px 30px;
   line-height: 2;
   text-align: left;
+  font-family: "Raleway", sans-serif;
 }
 .box2 .about-container #about-img {
   width: 440px;
@@ -1303,6 +1305,10 @@
 .arbox a:visited {
   text-decoration: none;
   color: black;
+}
+.arbox p {
+  line-height: 2;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
