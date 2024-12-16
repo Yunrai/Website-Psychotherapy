@@ -13,7 +13,6 @@
 }
 
 .servicesGallery {
-    cursor: pointer;
     overflow: hidden;
     flex-grow: 1;
     flex: 50%;
@@ -25,7 +24,6 @@
     position: relative;
     
     img{
-        
         width: 100%;
         height: 100%;
         max-height: fit-content;
@@ -34,13 +32,12 @@
         text-align: center;
         display:block;
         overflow:hidden;
-        cursor:pointer;
         box-sizing: content-box;  
     }
     .title{
         position:absolute;
         display:block;
-        cursor:pointer;
+        cursor:default;
         top: 40%;
         left: 50%;
         margin-right: -50%;
@@ -54,7 +51,6 @@
     .text{
         position:absolute;
         top: 55%;
-        cursor:pointer;
         max-width: 80%;
         text-align:center;
         left: 50%;
@@ -63,8 +59,7 @@
         display:none;
         margin-right: -50%;
         transition-duration: .3s;
-        transform: translate(-50%, -50%);
-        
+        transform: translate(-50%, -50%); 
     }
 }
 

@@ -1,5 +1,6 @@
 @media only screen and (min-width: 641px) and (max-width:1024px) {
-    
+
+
 .bottom{
     .container{
     align-items: center;
@@ -8,7 +9,7 @@
     grid-gap: 20px;
     bottom: 0;
         .home-text h1{
-            font-size: 30px;
+            font-size: 3vh;
             padding: 20px;
             display: table;
             background-color: #ffffffbe;
@@ -19,17 +20,17 @@
         .pf{
             width: 90%;
         }
+        
     }
-
     .container-left {
-            margin-left:30px;
+        margin-left:30px;
     }
     #p1{
-       font-size:20px;     
-    }  
+       font-size:2.3vh;     
+    }   
 
     #p2{
-         font-size:20px;
+         font-size:2.2vh;
      }
 
     .quote{
@@ -50,6 +51,21 @@
         top: 53%;
         left: 50%;
         transform: translate(-50%,-50%);  
+    }
+    .servicestxt{
+        .box{
+            .container2{
+                grid-gap:0;
+                grid-template-columns: 1fr;
+                p{
+                    font-size:2.2vh;
+                }
+                img{
+                    display:none;
+                }
+              
+            }
+        }
     }
        
 //Contact Page

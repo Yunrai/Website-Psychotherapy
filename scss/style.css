@@ -163,7 +163,7 @@
     padding-bottom: 20px;
   }
   body .bottom .container .home-text h1 {
-    font-size: 20px;
+    font-size: 3vh;
     padding: 10px;
     display: table;
     background-color: rgba(255, 255, 255, 0.7450980392);
@@ -172,7 +172,17 @@
     margin-top: 20px;
   }
   body .bottom .container .pf {
-    width: 60%;
+    width: 80%;
+  }
+  body .bottom .servicestxt .box .container2 {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+  }
+  body .bottom .servicestxt .box .container2 p {
+    font-size: 2.2vh;
+  }
+  body .bottom .servicestxt .box .container2 img {
+    display: none;
   }
   body .bottom .container-left {
     margin-top: 0;
@@ -404,7 +414,7 @@
     bottom: 0;
   }
   .bottom .container .home-text h1 {
-    font-size: 30px;
+    font-size: 3vh;
     padding: 20px;
     display: table;
     background-color: rgba(255, 255, 255, 0.7450980392);
@@ -419,10 +429,10 @@
     margin-left: 30px;
   }
   .bottom #p1 {
-    font-size: 20px;
+    font-size: 2.3vh;
   }
   .bottom #p2 {
-    font-size: 20px;
+    font-size: 2.2vh;
   }
   .bottom .quote {
     margin: 1em;
@@ -441,6 +451,16 @@
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .bottom .servicestxt .box .container2 {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+  }
+  .bottom .servicestxt .box .container2 p {
+    font-size: 2.2vh;
+  }
+  .bottom .servicestxt .box .container2 img {
+    display: none;
   }
   .bottom .contact-left {
     margin-left: 6px;
@@ -802,7 +822,6 @@
 }
 
 .servicesGallery {
-  cursor: pointer;
   overflow: hidden;
   flex-grow: 1;
   flex: 50%;
@@ -824,13 +843,12 @@
   text-align: center;
   display: block;
   overflow: hidden;
-  cursor: pointer;
   box-sizing: content-box;
 }
 .servicesGallery .title {
   position: absolute;
   display: block;
-  cursor: pointer;
+  cursor: default;
   top: 40%;
   left: 50%;
   margin-right: -50%;
@@ -844,7 +862,6 @@
 .servicesGallery .text {
   position: absolute;
   top: 55%;
-  cursor: pointer;
   max-width: 80%;
   text-align: center;
   left: 50%;

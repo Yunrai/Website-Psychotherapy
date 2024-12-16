@@ -15,6 +15,7 @@ toggle.addEventListener('click', () =>
  }
 );
 
+
 window.addEventListener('resize', () => {
     if(window.innerWidth <641)
         navLi.style.display = "none";

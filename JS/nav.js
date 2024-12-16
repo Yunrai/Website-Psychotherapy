@@ -21,3 +21,5 @@ window.addEventListener('resize', () => {
    else 
         navLi.style.display = "block";
 });
+
+
