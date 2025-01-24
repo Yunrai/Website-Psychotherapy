@@ -579,7 +579,7 @@
   align-items: center;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 10vh;
+  grid-gap: 15vh;
   bottom: 0;
 }
 .container2 p {
